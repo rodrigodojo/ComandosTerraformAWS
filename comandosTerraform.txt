@@ -1,0 +1,41 @@
+comandos basicos para Terraform
+
+terraform init
+// usado para inicializar o terraform na pasta local.
+
+terraform plan
+// usado para planejar as modificações que serão enviadas para o AWS.
+
+terraform apply
+// usado para efetuar as modificações revisadas no plain. 
+
+terraform apply -auto-approve
+// com essa flag as aprovações serão previamente aceitas.
+
+terraform show
+// mostrar os recursos usados.
+
+terraform destroy
+// destroi a infro criada.
+
+terraform taint NOMEDORECURSO
+// marca o terraform-managed , forçando e ser destruido e recriado no proximo apply.
+
+terraform untaint NOMEDORECURSO
+// desfaz a marcação feita.
+
+terraform console
+// possibilida visualizar os recursos de maneira mais detalhada pois nele é possivel digitar qual o recursos especifico deseja ser visto.
+
+terraform fmt
+// auxilia na formatação(identação) dos arquivos terraform da pasta local.
+
+terraform get
+// baixa os modulos dos recursos.
+
+terraform import NOMEDORECURSO
+// importa os recursos da infra para pasta local.
+
+terraform graph base.dot 
+//  cria um arquivo chamado base com extensao .dot com informaçoes da infra.
+
